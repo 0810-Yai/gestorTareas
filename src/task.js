@@ -1,5 +1,5 @@
 //lista de tareas
-let tasks = JSON.parse(localStorage.getItem("tasks")) || []; /almacenamiento Local en nuestro navegador/
+let tasks = JSON.parse(localStorage.getItem("tasks")) || []; //almacenamiento Local en nuestro navegador/
 //función para llevar las tareas
 export const getTasks = () => tasks;
 //función para agregar una tarea
