@@ -12,3 +12,18 @@ export const addTask = (task) => {
     tasks.push(newtask);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+//Función para elimiar una tarea 
+export const deleteTask = (id) => {
+tasks = tasks.filter((task) => task.id !== parseInt(id));
+localStorage.setItem("tasks", JSON.stringify(tasks));
+};
+// Función para actualizar una tarea
+export const toggleTask = (id) => {
+tasks = tasks.map((task) => {
+if(task.id === parseInt(id)) {
+task.completed = !task.completed;
+}
+return task;
+});
+localStorage.setItem("tasks", JSON.stringify(tasks));
+};

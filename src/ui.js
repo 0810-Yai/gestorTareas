@@ -16,7 +16,7 @@ if(task.completed === true) {
 
 li.innerHTML = `
 ${task.text}
-<button class="delate"> Borrar </button>
+<button class="delete"> Borrar </button>
 <button class="toggle"> ${task.completed === true ? "Regresar" : "Completado" } </button>
 `;
 
